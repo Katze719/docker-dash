@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docker-dash-terminal"
+version = "1.0.0"
+description = "Dependency-free Docker dashboard for the terminal"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+docker-dash = "docker_dash.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["docker_dash*"]
